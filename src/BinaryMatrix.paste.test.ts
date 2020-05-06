@@ -14,11 +14,7 @@ const test = (
 };
 
 test(
-    BinaryMatrix.fromString([
-        '000',
-        '000',
-        '000',
-    ]),
+    BinaryMatrix.fromSize([3, 3]),
     BinaryMatrix.fromString([
         '01',
         '10',
