@@ -33,7 +33,7 @@
     },
     "dependencies": {
         "@hookun/bitbybit": "0.0.8",
-        "@hookun/vlq": "0.0.2"
+        "@hookun/vlq": "0.0.4"
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^2.31.0",
