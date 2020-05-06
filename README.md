@@ -1,5 +1,8 @@
 # @hookun/binary-matrix
 
+[![codecov](https://codecov.io/gh/hookun/binary-matrix/branch/master/graph/badge.svg)](https://codecov.io/gh/hookun/binary-matrix)
+![CI Setup](https://github.com/hookun/binary-matrix/workflows/CI%20Setup/badge.svg)
+
 An implementation of matrix whose items are boolean.
 
 ## Install
