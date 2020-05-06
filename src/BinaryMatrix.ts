@@ -111,7 +111,7 @@ export class BinaryMatrix {
 
     public *list(state: boolean): Generator<Indices> {
         const {size} = this;
-        for (const bitOffset of listBitHasState(this.buffer, state, this.bitLength)) {
+        for (const bitOffset of listBitHasState(this.buffer, state, 0, this.bitLength)) {
             yield offsetToIndices(size, bitOffset);
         }
     }
