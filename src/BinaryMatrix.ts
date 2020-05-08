@@ -1,15 +1,18 @@
-import {toString, listBit} from '@hookun/bitbybit';
+import {toString, listBit, BitWriter} from '@hookun/bitbybit';
 import {
     createBufferFromBitLength,
     setBit,
     getBit,
     listBitHasState,
+    runLength,
 } from '@hookun/bitbybit';
+import {encode, decode} from '@hookun/vlq';
 import {indicesToOffset} from './indicesToOffset';
 import {offsetToIndices} from './offsetToIndices';
 import {Size, Indices, Expansion} from './type';
 import {sizeToBitLength} from './sizeToBitLength';
 import {checkExpansion} from './checkExpansion';
+import {isSame} from './isSame';
 
 export class BinaryMatrix {
 
@@ -44,12 +47,36 @@ export class BinaryMatrix {
         return new BinaryMatrix(size, buffer);
     }
 
+    public static decode(encoded: ArrayBuffer): BinaryMatrix {
+        const decoder = decode(encoded);
+        const dimensionCount: number = decoder.next().value;
+        const size: Array<number> = [];
+        for (let dimension = 0; dimension < dimensionCount; dimension++) {
+            size[dimension] = decoder.next().value;
+        }
+        const totalBitLength = sizeToBitLength(size);
+        const writer = new BitWriter(createBufferFromBitLength(totalBitLength));
+        let bitOffset = 0;
+        let state = false;
+        while (bitOffset < totalBitLength) {
+            const bitLength: number = decoder.next().value;
+            writer.write(state ? 2 ** bitLength - 1 : 0, bitLength);
+            state = !state;
+            bitOffset += bitLength;
+        }
+        return new BinaryMatrix(size, writer.end());
+    }
+
     public constructor(
         size: Size,
         buffer = createBufferFromBitLength(sizeToBitLength(size)),
     ) {
         this.size = size.slice();
         this.buffer = buffer;
+    }
+
+    public isSameAs(anotherMatrix: BinaryMatrix): boolean {
+        return isSame(this, anotherMatrix);
     }
 
     public get bitLength(): number {
@@ -129,6 +156,15 @@ export class BinaryMatrix {
 
     public toString(): string {
         return toString(this.buffer, this.size[0], this.size[1]);
+    }
+
+    public encode(): ArrayBuffer {
+        const {size, buffer} = this;
+        return encode([
+            size.length,
+            ...size,
+            ...runLength(buffer, 0, this.bitLength),
+        ]);
     }
 
 }

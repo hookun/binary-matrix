@@ -9,7 +9,7 @@ const test = (
     expected: BinaryMatrix,
 ): void => {
     ava(`${dest}\n${source}\n${pos.join(',')}`, (t) => {
-        t.is(dest.paste(source, pos).toString(), expected.toString());
+        t.true(dest.paste(source, pos).isSameAs(expected));
     });
 };
 
