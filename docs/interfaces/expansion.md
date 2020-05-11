@@ -19,7 +19,7 @@
 
 • **pos**: *[Indices](../README.md#indices)*
 
-*Defined in [type.ts:5](https://github.com/hookun/binary-matrix/blob/16b0836/src/type.ts#L5)*
+*Defined in [type.ts:5](https://github.com/hookun/binary-matrix/blob/138a2a4/src/type.ts#L5)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **size**: *[Size](../README.md#size)*
 
-*Defined in [type.ts:4](https://github.com/hookun/binary-matrix/blob/16b0836/src/type.ts#L4)*
+*Defined in [type.ts:4](https://github.com/hookun/binary-matrix/blob/138a2a4/src/type.ts#L4)*

@@ -45,7 +45,7 @@
 
 \+ **new BinaryMatrix**(`size`: [Size](../README.md#size), `buffer`: ArrayBuffer): *[BinaryMatrix](binarymatrix.md)*
 
-*Defined in [BinaryMatrix.ts:68](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L68)*
+*Defined in [BinaryMatrix.ts:68](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L68)*
 
 **Parameters:**
 
@@ -62,7 +62,7 @@ Name | Type | Default |
 
 • **_bitLength**? : *undefined | number*
 
-*Defined in [BinaryMatrix.ts:23](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L23)*
+*Defined in [BinaryMatrix.ts:23](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L23)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **buffer**: *ArrayBuffer*
 
-*Defined in [BinaryMatrix.ts:21](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L21)*
+*Defined in [BinaryMatrix.ts:21](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L21)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **size**: *[Size](../README.md#size)*
 
-*Defined in [BinaryMatrix.ts:19](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L19)*
+*Defined in [BinaryMatrix.ts:19](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L19)*
 
 ## Accessors
 
@@ -86,7 +86,7 @@ ___
 
 • **get bitLength**(): *number*
 
-*Defined in [BinaryMatrix.ts:82](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L82)*
+*Defined in [BinaryMatrix.ts:82](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L82)*
 
 **Returns:** *number*
 
@@ -96,7 +96,7 @@ ___
 
 ▸ **encode**(): *ArrayBuffer*
 
-*Defined in [BinaryMatrix.ts:161](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L161)*
+*Defined in [BinaryMatrix.ts:161](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L161)*
 
 **Returns:** *ArrayBuffer*
 
@@ -106,7 +106,7 @@ ___
 
 ▸ **get**(`indices`: [Indices](../README.md#indices)): *boolean*
 
-*Defined in [BinaryMatrix.ts:90](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L90)*
+*Defined in [BinaryMatrix.ts:90](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L90)*
 
 **Parameters:**
 
@@ -122,7 +122,7 @@ ___
 
 ▸ **isSameAs**(`anotherMatrix`: [BinaryMatrix](binarymatrix.md)): *boolean*
 
-*Defined in [BinaryMatrix.ts:78](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L78)*
+*Defined in [BinaryMatrix.ts:78](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L78)*
 
 **Parameters:**
 
@@ -138,7 +138,7 @@ ___
 
 ▸ **list**(`state`: boolean): *Generator‹[Indices](../README.md#indices)›*
 
-*Defined in [BinaryMatrix.ts:139](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L139)*
+*Defined in [BinaryMatrix.ts:139](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L139)*
 
 **Parameters:**
 
@@ -154,7 +154,7 @@ ___
 
 ▸ **listBit**(): *Generator‹[boolean, [Indices](../README.md#indices)]›*
 
-*Defined in [BinaryMatrix.ts:146](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L146)*
+*Defined in [BinaryMatrix.ts:146](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L146)*
 
 **Returns:** *Generator‹[boolean, [Indices](../README.md#indices)]›*
 
@@ -164,7 +164,7 @@ ___
 
 ▸ **paste**(`patch`: [BinaryMatrix](binarymatrix.md), `pos`: [Indices](../README.md#indices)): *[BinaryMatrix](binarymatrix.md)*
 
-*Defined in [BinaryMatrix.ts:122](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L122)*
+*Defined in [BinaryMatrix.ts:122](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L122)*
 
 **Parameters:**
 
@@ -181,7 +181,7 @@ ___
 
 ▸ **set**(`indices`: [Indices](../README.md#indices), `state`: boolean): *[BinaryMatrix](binarymatrix.md)*
 
-*Defined in [BinaryMatrix.ts:94](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L94)*
+*Defined in [BinaryMatrix.ts:94](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L94)*
 
 **Parameters:**
 
@@ -198,7 +198,7 @@ ___
 
 ▸ **setExternalBit**(`__namedParameters`: object, `indices`: [Indices](../README.md#indices), `state`: boolean): *[BinaryMatrix](binarymatrix.md)*
 
-*Defined in [BinaryMatrix.ts:114](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L114)*
+*Defined in [BinaryMatrix.ts:114](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L114)*
 
 **Parameters:**
 
@@ -221,7 +221,7 @@ ___
 
 ▸ **setInternalBit**(`indices`: [Indices](../README.md#indices), `state`: boolean): *[BinaryMatrix](binarymatrix.md)*
 
-*Defined in [BinaryMatrix.ts:105](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L105)*
+*Defined in [BinaryMatrix.ts:105](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L105)*
 
 **Parameters:**
 
@@ -238,7 +238,7 @@ ___
 
 ▸ **toString**(): *string*
 
-*Defined in [BinaryMatrix.ts:157](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L157)*
+*Defined in [BinaryMatrix.ts:157](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L157)*
 
 **Returns:** *string*
 
@@ -248,7 +248,7 @@ ___
 
 ▸ **decode**(`encoded`: ArrayBuffer): *[BinaryMatrix](binarymatrix.md)*
 
-*Defined in [BinaryMatrix.ts:50](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L50)*
+*Defined in [BinaryMatrix.ts:50](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L50)*
 
 **Parameters:**
 
@@ -264,7 +264,7 @@ ___
 
 ▸ **fromDimension**(`dimension`: number): *[BinaryMatrix](binarymatrix.md)*
 
-*Defined in [BinaryMatrix.ts:25](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L25)*
+*Defined in [BinaryMatrix.ts:25](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L25)*
 
 **Parameters:**
 
@@ -280,7 +280,7 @@ ___
 
 ▸ **fromSize**(`size`: [Size](../README.md#size)): *[BinaryMatrix](binarymatrix.md)*
 
-*Defined in [BinaryMatrix.ts:29](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L29)*
+*Defined in [BinaryMatrix.ts:29](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L29)*
 
 **Parameters:**
 
@@ -296,7 +296,7 @@ ___
 
 ▸ **fromString**(`rows`: Array‹string›): *[BinaryMatrix](binarymatrix.md)*
 
-*Defined in [BinaryMatrix.ts:33](https://github.com/hookun/binary-matrix/blob/16b0836/src/BinaryMatrix.ts#L33)*
+*Defined in [BinaryMatrix.ts:33](https://github.com/hookun/binary-matrix/blob/138a2a4/src/BinaryMatrix.ts#L33)*
 
 **Parameters:**
 
