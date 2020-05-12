@@ -33,7 +33,7 @@
 
 Ƭ **Indices**: *ReadonlyArray‹number›*
 
-*Defined in [type.ts:2](https://github.com/hookun/binary-matrix/blob/138a2a4/src/type.ts#L2)*
+*Defined in [type.ts:2](https://github.com/hookun/binary-matrix/blob/8dc88a8/src/type.ts#L2)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 Ƭ **Size**: *ReadonlyArray‹number›*
 
-*Defined in [type.ts:1](https://github.com/hookun/binary-matrix/blob/138a2a4/src/type.ts#L1)*
+*Defined in [type.ts:1](https://github.com/hookun/binary-matrix/blob/8dc88a8/src/type.ts#L1)*
 
 ## Functions
 
@@ -49,7 +49,7 @@ ___
 
 ▸ **checkExpansion**(`sizeList`: [Size](README.md#size), `indices`: [Indices](README.md#indices)): *[Expansion](interfaces/expansion.md) | null*
 
-*Defined in [checkExpansion.ts:3](https://github.com/hookun/binary-matrix/blob/138a2a4/src/checkExpansion.ts#L3)*
+*Defined in [checkExpansion.ts:3](https://github.com/hookun/binary-matrix/blob/8dc88a8/src/checkExpansion.ts#L3)*
 
 **Parameters:**
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **indicesToOffset**(`size`: [Size](README.md#size), `indices`: [Indices](README.md#indices)): *number*
 
-*Defined in [indicesToOffset.ts:3](https://github.com/hookun/binary-matrix/blob/138a2a4/src/indicesToOffset.ts#L3)*
+*Defined in [indicesToOffset.ts:3](https://github.com/hookun/binary-matrix/blob/8dc88a8/src/indicesToOffset.ts#L3)*
 
 **Parameters:**
 
@@ -83,7 +83,7 @@ ___
 
 ▸ **isSame**(`a`: [BinaryMatrix](classes/binarymatrix.md), `b`: [BinaryMatrix](classes/binarymatrix.md)): *boolean*
 
-*Defined in [isSame.ts:45](https://github.com/hookun/binary-matrix/blob/138a2a4/src/isSame.ts#L45)*
+*Defined in [isSame.ts:45](https://github.com/hookun/binary-matrix/blob/8dc88a8/src/isSame.ts#L45)*
 
 **Parameters:**
 
@@ -100,7 +100,7 @@ ___
 
 ▸ **isSameBuffer**(`a`: ArrayBuffer, `b`: ArrayBuffer, `bitLength`: number): *boolean*
 
-*Defined in [isSame.ts:17](https://github.com/hookun/binary-matrix/blob/138a2a4/src/isSame.ts#L17)*
+*Defined in [isSame.ts:17](https://github.com/hookun/binary-matrix/blob/8dc88a8/src/isSame.ts#L17)*
 
 **Parameters:**
 
@@ -118,7 +118,7 @@ ___
 
 ▸ **isSameSize**(`a`: [Size](README.md#size), `b`: [Size](README.md#size)): *boolean*
 
-*Defined in [isSame.ts:5](https://github.com/hookun/binary-matrix/blob/138a2a4/src/isSame.ts#L5)*
+*Defined in [isSame.ts:5](https://github.com/hookun/binary-matrix/blob/8dc88a8/src/isSame.ts#L5)*
 
 **Parameters:**
 
@@ -135,7 +135,7 @@ ___
 
 ▸ **offsetToIndices**(`size`: [Size](README.md#size), `offset`: number): *[Indices](README.md#indices)*
 
-*Defined in [offsetToIndices.ts:3](https://github.com/hookun/binary-matrix/blob/138a2a4/src/offsetToIndices.ts#L3)*
+*Defined in [offsetToIndices.ts:3](https://github.com/hookun/binary-matrix/blob/8dc88a8/src/offsetToIndices.ts#L3)*
 
 **Parameters:**
 
@@ -152,7 +152,7 @@ ___
 
 ▸ **sizeToBitLength**(`size`: [Size](README.md#size)): *number*
 
-*Defined in [sizeToBitLength.ts:3](https://github.com/hookun/binary-matrix/blob/138a2a4/src/sizeToBitLength.ts#L3)*
+*Defined in [sizeToBitLength.ts:3](https://github.com/hookun/binary-matrix/blob/8dc88a8/src/sizeToBitLength.ts#L3)*
 
 **Parameters:**
 
